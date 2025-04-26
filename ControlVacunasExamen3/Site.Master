@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Master.cs" Inherits="ControlVacunasExamen3.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title>Control de Vacunas</title>
+    <link href="Estilos/Site.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <!-- Menú de Navegación -->
+        <nav>
+            <ul>
+                <li><a href="Default.aspx">Inicio</a></li>
+                <li><a href="Vacunas.aspx">Gestión de Vacunas</a></li>
+                <li><a href="AgregarVacuna.aspx">Agregar Vacuna</a></li>
+                <li><a href="EliminarVacuna.aspx">Eliminar Vacuna</a></li>
+                <li><a href="Reporte.aspx">Reporte de Vacunas</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenedor de las páginas -->
+        <div class="container">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+        </div>
+    </form>
+</body>
+</html>
